@@ -10,11 +10,20 @@ public class MoterBikeRunner {
 		
 		
 		//Encapsulation
-		ducati.setSpeed(180);
-		honda.setSpeed(170);
+		ducati.setSpeed(50);
+		honda.setSpeed(80);
 		
-		System.out.println("ducati " +ducati.getSpeed());
-		System.out.println("ducati " +honda.getSpeed());
+		int ducatiSpeed = ducati.getSpeed();
+		ducatiSpeed = ducatiSpeed + 100;
+		ducati.setSpeed(ducatiSpeed);
+		
+		
+		int hondaSpeed = honda.getSpeed();
+		hondaSpeed = hondaSpeed + 100;
+		honda.setSpeed(hondaSpeed);
+		
+		System.out.println("ducati Speed => " +ducati.getSpeed());
+		System.out.println("ducati Speed => " +honda.getSpeed());
 		
 		
 		
