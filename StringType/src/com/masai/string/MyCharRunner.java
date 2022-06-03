@@ -11,6 +11,8 @@ public class MyCharRunner {
 		System.out.println(myChar.isAlphabetWithValue());
 		
 		System.out.println(myChar.isConsonant());
+		
+		System.out.println(myChar.isDigit());
 	}
 
 }
