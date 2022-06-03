@@ -60,5 +60,21 @@ public class MyChar {
 			return false;
 		}
 	}
+
+
+	public static void printLowerCaseAlphabet() {
+		// TODO Auto-generated method stub
+		for(char ch = 'a'; ch <= 'z'; ch++) {
+			System.out.print(ch);
+		}
+	}
+
+			
+	public static void printUpperCaseAlphabet() {
+		// TODO Auto-generated method stub
+		for(char ch = 'A'; ch <= 'Z'; ch++) {
+			System.out.print(ch);
+		}
+	}
 	
 }
