@@ -30,5 +30,16 @@ public class MyChar {
 			return false;
 		}
 	}
+
+
+	public boolean isAlphabetWithValue() {
+//		A = 65, Z = 90, a = 97, z = 112;
+		if((ch >=65 && ch <=90) || (ch >= 97 && ch <= 122)) {
+			return true;
+		}
+		{
+			return false;
+		}
+	}
 	
 }
