@@ -53,14 +53,21 @@ public class MyChar {
 	}
 
 
-	public boolean isDigit() {
+//	public boolean isDigit() {
+//		if(ch >= 48 && ch <= 57) {
+//			return true;
+//		} {
+//			return false;
+//		}
+//	}
+
+	public String isDigit() {
 		if(ch >= 48 && ch <= 57) {
-			return true;
+			return "Yes it Is Digit";
 		} {
-			return false;
+			return "NO it Is Digit";
 		}
 	}
-
 
 	public static void printLowerCaseAlphabet() {
 		// TODO Auto-generated method stub
@@ -76,5 +83,7 @@ public class MyChar {
 			System.out.print(ch);
 		}
 	}
+
+
 	
 }
