@@ -1,6 +1,7 @@
 package com.masai.arrays;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class Student {
 	
@@ -56,10 +57,10 @@ public class Student {
 
 	public BigDecimal getAverageMarks() {
 		int sum = getTotalSumOfMarks();
-		int len = getNumberOfMarks();
+		int x = getNumberOfMarks();
 		
 		BigDecimal result = new BigDecimal(sum)
-				.divide(new BigDecimal(len), 5);
+				.divide(new BigDecimal(x), 3, RoundingMode.UP);
 		return result;
 	}
 }
