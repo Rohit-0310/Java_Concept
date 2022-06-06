@@ -1,5 +1,7 @@
 package com.masai.arrays;
 
+import java.math.BigDecimal;
+
 public class Student {
 	
 	private String name;
@@ -49,5 +51,15 @@ public class Student {
 			}
 		}
 		return minimum;
+	}
+
+
+	public BigDecimal getAverageMarks() {
+		int sum = getTotalSumOfMarks();
+		int len = getNumberOfMarks();
+		
+		BigDecimal result = new BigDecimal(sum)
+				.divide(new BigDecimal(len), 5);
+		return result;
 	}
 }

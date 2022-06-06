@@ -23,8 +23,8 @@ public class StudentRunner {
 		System.out.println("Minimum Marks "+ minMark);
 		
 		
-//		BigDecimal average = student.getAverageMarks();
-		
+		BigDecimal average = student.getAverageMarks();
+		System.out.println("Average Marks "+ average);
 		
 
 	}
