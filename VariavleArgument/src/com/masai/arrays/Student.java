@@ -9,7 +9,7 @@ public class Student {
 	private int[] marks;
 	
 	
-	public Student(String name, int[] marks) {
+	public Student(String name, int... marks) {
 		this.name = name;
 		this.marks = marks;
 	}
@@ -60,7 +60,7 @@ public class Student {
 		int x = getNumberOfMarks();
 		
 		BigDecimal result = new BigDecimal(sum)
-				.divide(new BigDecimal(x), 5, RoundingMode.UP);
+				.divide(new BigDecimal(x), 3, RoundingMode.UP);
 		return result;
 	}
 }
