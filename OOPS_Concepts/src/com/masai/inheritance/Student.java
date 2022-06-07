@@ -1,16 +1,16 @@
 package com.masai.inheritance;
 
 public class Student extends Person{
-	private String collegr;
+	private String college;
 	private int year;
 	
 	
 	
 	public String getCollegr() {
-		return collegr;
+		return college;
 	}
-	public void setCollegr(String collegr) {
-		this.collegr = collegr;
+	public void setCollege(String college) {
+		this.college = college;
 	}
 	public int getYear() {
 		return year;
@@ -19,10 +19,10 @@ public class Student extends Person{
 		this.year = year;
 	}
 	
-	
-	public String toString() {
-		return collegr + " " + year;
-	}
+//	
+//	public String toString() {
+//		return college + " " + year;
+//	}
 	
 	
 }

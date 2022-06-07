@@ -1,6 +1,6 @@
 package com.masai.inheritance;
 
-public class Person  {
+public class Person extends Object {
 	private String name;
 	private String email;
 	private String phoneNumber;
@@ -26,7 +26,7 @@ public class Person  {
 	}
 	
 	public String toString() {
-		return name+" " + email + " "+ phoneNumber;
+		return name+" " + email + " "+ phoneNumber + " ";
 	}
 	
 }
