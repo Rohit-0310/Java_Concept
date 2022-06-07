@@ -15,15 +15,79 @@ public class Fan {
 		
 	}
 	
+	
+	
+	public String getMake() {
+		return make;
+	}
+
+
+
+	public void setMake(String make) {
+		this.make = make;
+	}
+
+
+
+	public double getRadius() {
+		return radius;
+	}
+
+
+
+	public void setRadius(double radius) {
+		this.radius = radius;
+	}
+
+
+
+	public String getColor() {
+		return color;
+	}
+
+
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+
+
+	public boolean isOn() {
+		return isOn;
+	}
+
+
+
+	public void setOn(boolean isOn) {
+		this.isOn = isOn;
+	}
+
+
+
+	public byte getSpeed() {
+		return speed;
+	}
+
+
+
+	public void setSpeed(byte speed) {
+		this.speed = speed;
+	}
+
+
+
 	public void switchOn() {
 		this.isOn = true;
+		setSpeed((byte)5);
 		
 	}
 	
-//	public void switchOff() {
-//		this.isOn = false;
-//		
-//	}
+	public void switchOff() {
+		this.isOn = false;
+		setSpeed((byte)0);
+		
+	}
 	
 public String toString() {
 //		return make+" "+radius+" "+ color;

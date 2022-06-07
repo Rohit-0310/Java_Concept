@@ -6,8 +6,9 @@ public class FanRunner {
 
 		Fan fan = new Fan("Bajaj", 0.34567,"Green");
 		fan.switchOn();
-//		fan.switchOff();
-		System.out.println(fan);
+		System.out.println("After Fan Switch is On"+fan);
+		fan.switchOff();
+		System.out.println("After Fan Switch is Off"+fan);
 
 	}
 	
