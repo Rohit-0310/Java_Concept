@@ -15,6 +15,16 @@ public class Fan {
 		
 	}
 	
+	public void switchOn() {
+		this.isOn = true;
+		
+	}
+	
+//	public void switchOff() {
+//		this.isOn = false;
+//		
+//	}
+	
 public String toString() {
 //		return make+" "+radius+" "+ color;
 	return String.format("make - %s, radius - %f, color - %s, isOn -%b, speed - %d",
