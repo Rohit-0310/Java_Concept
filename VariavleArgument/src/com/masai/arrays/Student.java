@@ -70,5 +70,19 @@ public class Student {
 				.divide(new BigDecimal(x), 3, RoundingMode.UP);
 		return result;
 	}
-//	public
+	public String toString() {
+		return name + marks;
+	}
+
+
+	public void addNewMarks(int i) {
+		marks.add(i);
+		
+	}
+
+
+	public void removeMarksAtIndex(int i) {
+		marks.remove(i);
+		
+	}
 }

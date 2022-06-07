@@ -33,8 +33,13 @@ public class StudentRunner {
 		
 		System.out.println(student);
 		
-//		student.addNewMarks(35);
-//		student.removeMarksAtIndex(2);
+		
+		student.addNewMarks(35);
+		student.removeMarksAtIndex(2);
+
+		
+		System.out.println(student);
+		
 		
 		
 
