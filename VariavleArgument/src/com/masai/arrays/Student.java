@@ -2,21 +2,26 @@ package com.masai.arrays;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.util.ArrayList;
+import java.util.Collections;
 
 public class Student {
 	
 	private String name;
-	private int[] marks;
+	private ArrayList<Integer> marks = new ArrayList<Integer>();
 	
 	
 	public Student(String name, int... marks) {
 		this.name = name;
-		this.marks = marks;
+		for(int mark : marks) {
+			
+			this.marks.add(mark);
+		}
 	}
 
 
 	public int getNumberOfMarks() {
-		return marks.length;
+		return marks.size();
 	}
 
 
@@ -34,24 +39,26 @@ public class Student {
 
 
 	public int getMaximumMarks() {
-		int maximum = Integer.MIN_VALUE;
-		for(int x : marks) {
-			if(x > maximum) {
-				maximum = x;
-			}
-		}
-		return maximum;
+		return Collections.max(marks);
+//		int maximum = Integer.MIN_VALUE;
+//		for(int x : marks) {
+//			if(x > maximum) {
+//				maximum = x;
+//			}
+//		}
+//		return maximum;
 	}
 
 
 	public int getMinimumMarks() {
-		int minimum = Integer.MAX_VALUE;
-		for(int x : marks) {
-			if(x < minimum) {
-				minimum = x;
-			}
-		}
-		return minimum;
+		return Collections.min(marks);
+//		int minimum = Integer.MAX_VALUE;
+//		for(int x : marks) {
+//			if(x < minimum) {
+//				minimum = x;
+//			}
+//		}
+//		return minimum;
 	}
 
 
@@ -63,4 +70,5 @@ public class Student {
 				.divide(new BigDecimal(x), 3, RoundingMode.UP);
 		return result;
 	}
+//	public
 }
