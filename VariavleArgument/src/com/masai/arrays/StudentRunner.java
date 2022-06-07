@@ -10,6 +10,11 @@ public class StudentRunner {
 		
 		Student student = new Student("Mohan", 97,99,100);
 		
+		Student student1 = new Student("Sohan", 96,85,100);
+//		System.out.println(student1);
+		Student student2 = new Student("Rohan", 100,89,89,91);
+//		System.out.println(student2);
+		
 		int number = student.getNumberOfMarks();
 		System.out.println("Number Of Marks "+ number);
 		
