@@ -1,7 +1,6 @@
 package com.masai.oop;
 
 public class Review {
-	
 	private int id;
 	private String description;
 	private int rating;
@@ -15,5 +14,4 @@ public class Review {
 	public String toString() {
 		return id+" " + description + " "+ rating;
 	}
-
 }
