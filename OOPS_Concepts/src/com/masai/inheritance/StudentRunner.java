@@ -14,14 +14,15 @@ public class StudentRunner {
 		student.setName("Ramu");
 		student.setEmail("ramu@gmail.com");
 		
-//		System.out.println(student);
+		System.out.println(student);
 		
 		
 		Employee ramdheer = new Employee();
 		
 		ramdheer.setName("Ramdheer");
-		ramdheer.setEmployerName("Wasapur");
+		ramdheer.setEmployerName("wasseypuy");
 		ramdheer.setTitle("Criminal");;
+		ramdheer.setEmail("ramdheer@wasseypuy.com");
 		
 		System.out.println(ramdheer);
 		

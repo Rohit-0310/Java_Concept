@@ -18,10 +18,10 @@ public class Student extends Person{
 		this.year = year;
 	}
 	
-//	
-//	public String toString() {
-//		return college + " " + year;
-//	}
+	
+	public String toString() {
+		return super.getName()+ " " + college + " " + year;
+	}
 	
 	
 }

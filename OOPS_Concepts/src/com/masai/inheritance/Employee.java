@@ -34,6 +34,6 @@ public class Employee extends  Person{
 	}
 
 	public String toString() {
-		return title + " " + employerName;
+		return super.toString()+" " + title + " " + employerName;
 	}
 }

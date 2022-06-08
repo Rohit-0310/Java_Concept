@@ -26,7 +26,7 @@ public class Person extends Object {
 	}
 	
 	public String toString() {
-		return name+" " + email + " "+ phoneNumber + " ";
+		return getName()+" " + getEmail() + " "+ phoneNumber + " ";
 	}
 	
 }
