@@ -5,6 +5,11 @@ public class Student extends Person{
 	private int year;
 	
 	
+	public Student() {
+		super();
+		System.out.println("Bro, -I am inside Student");
+	}
+	
 	public String getCollegr() {
 		return college;
 	}

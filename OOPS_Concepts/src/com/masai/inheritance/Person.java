@@ -6,6 +6,11 @@ public class Person extends Object {
 	private String phoneNumber;
 	
 	
+	public Person() {
+		System.out.println("Bhai, -I am inside Person");
+	}
+
+	
 	public String getName() {
 		return name;
 	}
@@ -26,7 +31,7 @@ public class Person extends Object {
 	}
 	
 	public String toString() {
-		return getName()+" " + getEmail() + " "+ phoneNumber + " ";
+		return getName()+" " + getEmail() + " "+ getPhoneNumber() + " ";
 	}
 	
 }
