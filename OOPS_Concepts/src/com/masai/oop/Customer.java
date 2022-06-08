@@ -6,9 +6,10 @@ public class Customer {
 	private Address workAddress;
 	
 	
-	public Customer(String name, Address homeAddress) {
+	public Customer(String name, Address homeAddress, Address workAddress) {
 		this.name = name;
 		this.homeAddress = homeAddress;
+		this.workAddress = workAddress;
 	}
 
 
