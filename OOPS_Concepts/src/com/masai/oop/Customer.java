@@ -41,6 +41,9 @@ public class Customer {
 		this.workAddress = workAddress;
 	}
 	
-	
+	public String toString() {
+		return String.format("name-[%s], Home Address-[%s],Work Address-[%s]",
+				name, homeAddress, workAddress);
+	}
 	
 }

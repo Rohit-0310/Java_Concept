@@ -13,4 +13,11 @@ public class Address {
 	}
 	
 	
+	public String toString() {
+//		return String.format("line1-[%s], line2-[%s],zip-[%s]",
+//				line1, line2, zip);
+		
+		return line1+" "+ line2+ " " +zip;
+	}
+	
 }
