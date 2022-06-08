@@ -5,7 +5,6 @@ public class Student extends Person{
 	private int year;
 	
 	
-	
 	public String getCollegr() {
 		return college;
 	}
