@@ -2,6 +2,7 @@ package com.masai.learncollections;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class MapRunner {
 
@@ -11,7 +12,7 @@ public class MapRunner {
 		String str = "This is our last session in java covered in 10 days. This has ";
 		
 		
-		//Occurence of Characters
+		//Occurrence of Characters
 		
 		Map<Character,Integer> occurence = new HashMap<>();
 		char[] characters = str.toCharArray();
@@ -27,6 +28,25 @@ public class MapRunner {
 			}
 		}
 		System.out.println(occurence);
+		
+		
+		//Occurrence of Word
+		
+				Map<String,Integer> count = new TreeMap<>();
+				String[] words = str.split(" ");
+				
+				for(String word: words)
+				{
+					Integer value = count.get(word);
+					if(value == null)
+					{
+						count.put(word,1);
+					}else {
+						count.put(word, value + 1);
+					}
+				}
+				System.out.println(count);
+
 
 	}
 
